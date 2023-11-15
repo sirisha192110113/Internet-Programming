@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Event Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: palepink;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: lightblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .speakers {
+            background-color: green;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .venue {
+            background-color: purple;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .schedule {
+            background-color: yellow;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .purpose {
+            background-color: pink;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .registration {
+            background-color: pale violet;
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Events</h1>
+        <p>Event Date: 21/10/2023</p>
+    </div>
+
+    <div class="speakers">
+        <h2>Speakers</h2>
+        <p>Speaker 1 <a href="https://en.wikipedia.org/wiki/N._R._Narayana_Murty">(Speaker 1 Bio)</a></p>
+        <p>Narayana Murthy</P>
+        <img src="narayanamurthy.jpg" alt="narayanamurthy" width="48" height="80">
+        <p>Speaker 2 <a href="https://en.wikipedia.org/wiki/Sundar_Pichai">(Speaker 2 Bio)</a></p>
+        <p>sundhar pichai</p>
+        <image src="sundharpichai.png" alt="sundharpichai" width="48" height="80">
+        <!-- Add more speakers if needed -->
+    </div>
+
+    <div class="venue">
+        <h2>Event Venue</h2>
+        <p>Venue:Seminar hall</p>
+        <p>Address: saveetha school of engineering college,thandalam chennai</p>
+    </div>
+
+    <div class="schedule">
+        <h2>Event Schedule</h2>
+        <p>Day 1:</p>
+        <ul>
+            <li>Session 1: 10:00 AM - 12:00 PM</li>
+            <li>Session 2: 1:00 PM - 3:00 PM</li>
+        </ul>
+        <p>Day 2:</p>
+        <ul>
+            <li>Session 3: 10:00 AM - 12:00 PM</li>
+            <li>Session 4: 1:00 PM - 3:00 PM</li>
+        </ul>
+    </div>
+
+    <div class="purpose">
+        <h2>Purpose of the Event</h2>
+        <p>This event aims to acheive your goals </p>
+        <p>Target Audience:Every student must register the webinar achive your goals</p>
+    </div>
+
+    <form action="register.html">
+        <input type="submit"  value="register now">
+</form>
+</body>
+
+</html>
+
+
+register.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student seminar Registration</title>
+</head>
+<body>
+    <h1>Event Registration</h1>
+    <form action="success.html" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+
+        <label for="student_year">Student_year:</label>
+        <input type="text" id="student_year" name="student_year" required><br><br>
+       
+        <label for="student_department">Student_department:</label>
+        <select id="text" id="student_department" name="student_department" required>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+        </select><br><br>
+           
+        <label for="seminar_selection">Seminar Selection:</label>
+        <select id="seminar_selection" name="seminar_selection" required>
+            <option value="Seminar 1">Seminar 1</option>
+            <option value="Seminar 2">Seminar 2</option>
+            <option value="Seminar 3">Seminar 3</option>
+        </select><br><br>
+                  
+        <button type="submit">Register</button>
+
+        </form>
+               
+    </body>
+</html>
+
+sucess.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Success</title>
+</head>
+<body>
+    <h1>Registration Successful</h1>
+    <p>Thank you for registering! Your registration was successful.</p>
+    <a href="register.html">go back to registration</a>
+</body>
+</html>
+
